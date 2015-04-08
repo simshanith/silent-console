@@ -1,7 +1,10 @@
 {
   "name": "silent-console",
-  "main": "dist/silent-console.js",
-  "version": "0.0.1",
+  "main": [
+    "silent-console.js",
+    "silent-console.min.js"
+  ],
+  "version": "0.1.0",
   "homepage": "https://github.com/simshanith/silent-console",
   "description": "A silent console interface.",
   "keywords": [
