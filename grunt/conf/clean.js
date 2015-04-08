@@ -4,7 +4,7 @@ module.exports = function cleanConfig(grunt) {
   return {
     dist: {
       files: [{
-        src: ['silent-console*.js']
+        src: ['silent-console.min.js']
       }]
     },
     build: {

@@ -5,8 +5,7 @@ module.exports = function gruntTest(grunt) {
     grunt.task.run([
       'clean:dist',
       'clean:build',
-      'umd:silent-console',
-      'uglify:silent-console',
+      'webpack:silent-console',
       'diffCopy:build'
     ]);
   });
