@@ -1,0 +1,22 @@
+{
+  "name": "silent-console",
+  "main": "dist/silent-console.js",
+  "version": "0.0.1",
+  "homepage": "https://github.com/simshanith/silent-console",
+  "description": "A silent console interface.",
+  "keywords": [
+    "console"
+  ],
+  "authors": [
+    "Shane Daniel <simrpgman@gmail.com> (https://twitter.com/simloovoo)"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "grunt"
+  ]
+}
