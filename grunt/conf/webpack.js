@@ -17,10 +17,7 @@ module.exports = function (grunt) {
       },
       plugins: [
         new webpack.optimize.UglifyJsPlugin({
-          preserveComments: 'some',
-          compress: {
-            unused: false
-          }
+          preserveComments: 'some'
         })
       ]
     }

@@ -21,6 +21,7 @@
     "test",
     "tests",
     "grunt",
+    "build",
     "package.json",
     "Gruntfile.js"
   ]
