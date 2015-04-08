@@ -27,18 +27,18 @@ The above copyright notice and this permission notice shall be included in all c
 THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 */
 
-function silentConsole() {
-    var dummy = function() {};
-    var console = {};
-    var empty = {};
-    var properties = 'memory'.split(',');
-    var methods = ('assert,clear,count,debug,dir,dirxml,error,exception,group,' +
-       'groupCollapsed,groupEnd,info,log,markTimeline,profile,profiles,profileEnd,' +
-       'show,table,time,timeEnd,timeline,timelineEnd,timeStamp,trace,warn').split(',');
+define([], function silentConsole() {
+  var dummy = function() {};
+  var console = {};
+  var empty = {};
+  var properties = 'memory'.split(',');
+  var methods = ('assert,clear,count,debug,dir,dirxml,error,exception,group,' +
+     'groupCollapsed,groupEnd,info,log,markTimeline,profile,profiles,profileEnd,' +
+     'show,table,time,timeEnd,timeline,timelineEnd,timeStamp,trace,warn').split(',');
 
-    var prop, method;
-    while (prop = properties.pop()) console[prop] = empty;
-    while (method = methods.pop()) console[method] = dummy;
+  var prop, method;
+  while (prop = properties.pop()) console[prop] = empty;
+  while (method = methods.pop()) console[method] = dummy;
 
-    return console;
-}
+  return console;
+});
